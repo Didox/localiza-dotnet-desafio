@@ -1,23 +1,15 @@
 using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Domain.Authentication;
-using Domain.Entities;
-using Domain.ViewModel;
-using Domain.ViewModel.Jwt;
-using Infrastructure.Services;
-using Infrastructure.Services.Person;
 
 namespace Domain.UseCase.Builders
 {
     public class EntityBuilder
     {
-        public static T Call<T>(object userSave)
+        public static T Call<T>(object obj)
         {
             var entity = Activator.CreateInstance<T>();
-            foreach (var field in userSave.GetType().GetProperties())
+            foreach (var field in obj.GetType().GetProperties())
             {
-                var value = userSave.GetType().GetProperty(field.Name).GetValue(userSave);
+                var value = obj.GetType().GetProperty(field.Name).GetValue(obj);
                 if(value != null)
                 {
                     var prop = entity.GetType().GetProperty(field.Name);

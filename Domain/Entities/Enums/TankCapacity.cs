@@ -1,6 +1,6 @@
 using System;
 
-namespace Domain.Entities
+namespace Domain.Entities.Enums
 {
 	public enum TankCapacity
 	{

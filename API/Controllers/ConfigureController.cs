@@ -24,15 +24,22 @@ namespace API.Controllers
         [Route("/start")]
         [Route("/comecar")]
         [AllowAnonymous]
-        public async Task<string> InicialConfig()
+        public string InicialConfig()
         {
-            var sql = new SqlDriver();
-            //await sql.CreateTable<Person>();
-            //await sql.CreateTable<Address>();
-            //await sql.CreateTable<Model>();
-            //await sql.CreateTable<Brand>();
-            await sql.CreateTable<Category>();
-            //await sql.CreateTable<Vehicle>();
+            
+            Task.Run(async () =>
+            {
+                var sql = new SqlDriver();
+                //await sql.CreateTable<Person>();
+                //await sql.CreateTable<Address>();
+                //await sql.CreateTable<Model>();
+                //await sql.CreateTable<Brand>();
+                //await sql.CreateTable<Category>();
+                //await sql.CreateTable<Vehicle>();
+                //await sql.CreateTable<Checklist>();
+                //await sql.CreateTable<Schedule>();
+            });
+
 
             return "Sistema configurado";
         }

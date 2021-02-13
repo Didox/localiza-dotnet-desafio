@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -9,7 +7,7 @@ using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Infrastructure.Services.Person;
 using Infrastructure.Services;
-using Domain.UseCase.PersonServices;
+using Domain.UseCase;
 using Domain.ViewModel;
 using Infrastructure.Services.Exceptions;
 using Domain.Entities.Exceptions;

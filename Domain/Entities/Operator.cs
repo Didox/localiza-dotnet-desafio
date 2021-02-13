@@ -2,6 +2,8 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
+using Domain.Entities.Enums;
+using Domain.Entities.Interfaces;
 
 namespace Domain.Entities
 {

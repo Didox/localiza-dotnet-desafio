@@ -5,8 +5,8 @@ using Newtonsoft.Json.Linq;
 using System.IO;
 using System;
 using Microsoft.IdentityModel.Tokens;
-using Domain.Entities;
 using Domain.Authentication;
+using Domain.Entities.Interfaces;
 
 namespace API.Authentication
 {

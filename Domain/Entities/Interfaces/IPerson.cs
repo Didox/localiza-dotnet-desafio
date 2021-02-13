@@ -1,6 +1,7 @@
 using System;
+using Domain.Entities.Enums;
 
-namespace Domain.Entities
+namespace Domain.Entities.Interfaces
 {
     public interface IPerson
     {

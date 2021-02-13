@@ -12,19 +12,19 @@ using Domain.UseCase.UserServices;
 namespace api.Controllers
 {
     [ApiController]
-    public class ChecklistController : ControllerBase
+    public class ChecklistsController : ControllerBase
     {
         private readonly EntityService _entityService;
-        private readonly ILogger<ChecklistController> _logger;
+        private readonly ILogger<ChecklistsController> _logger;
 
-        public ChecklistController(ILogger<ChecklistController> logger)
+        public ChecklistsController(ILogger<ChecklistsController> logger)
         {
             _logger = logger;
             _entityService = new EntityService(new EntityRepository());
         }
 
         [HttpGet]
-        [Route("/checklist")]
+        [Route("/checklists")]
         [Authorize(Roles = "Operator, User")]
         public async Task<ICollection<Checklist>> Index()
         {
@@ -32,7 +32,7 @@ namespace api.Controllers
         }
 
         [HttpPost]
-        [Route("/checklist")]
+        [Route("/checklists")]
         [Authorize(Roles = "Operator")]
         public async Task<IActionResult> Create([FromBody] Checklist checklist)
         {
@@ -50,7 +50,7 @@ namespace api.Controllers
         }
 
         [HttpPut]
-        [Route("/checklist/{id}")]
+        [Route("/checklists/{id}")]
         [Authorize(Roles = "Operator")]
         public async Task<IActionResult> Update(int id, [FromBody] Checklist checklist)
         {
@@ -69,7 +69,7 @@ namespace api.Controllers
         }
 
         [HttpDelete]
-        [Route("/checklist/{id}")]
+        [Route("/checklists/{id}")]
         [Authorize(Roles = "Operator")]
         public async Task<IActionResult> Delete(int id)
         {

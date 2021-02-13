@@ -5,16 +5,16 @@
         <State name="__root__">
           <Node name="localiza-dotnet-desafio" expanded="True">
             <Node name="API" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="LoginController.cs" selected="True" />
-              </Node>
+              <Node name="Authentication" expanded="True" />
+              <Node name="Controllers" expanded="True" />
             </Node>
             <Node name="Domain" expanded="True">
-              <Node name="Entities" expanded="True" />
-              <Node name="UseCase" expanded="True">
-                <Node name="PersonServices" expanded="True" />
+              <Node name="Authentication" expanded="True" />
+              <Node name="Entities" expanded="True">
+                <Node name="Interfaces" expanded="True" />
+                <Node name="Vehicle.cs" selected="True" />
               </Node>
-              <Node name="ViewModel" expanded="True" />
+              <Node name="UseCase" expanded="True" />
             </Node>
             <Node name="Infrastructure" expanded="True">
               <Node name="Database" expanded="True" />

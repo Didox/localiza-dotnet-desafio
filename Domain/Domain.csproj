@@ -7,11 +7,12 @@
   <ItemGroup>
     <Folder Include="UseCase\" />
     <Folder Include="ViewModel\" />
-    <Folder Include="UseCase\PersonServices\" />
     <Folder Include="Authentication\" />
     <Folder Include="ViewModel\Jwt\" />
     <Folder Include="UseCase\Builders\" />
     <Folder Include="Entities\Exceptions\" />
+    <Folder Include="Entities\Interfaces\" />
+    <Folder Include="Entities\Enums\" />
   </ItemGroup>
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>

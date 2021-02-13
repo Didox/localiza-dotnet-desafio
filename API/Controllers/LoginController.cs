@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Infrastructure.Services.Person;
 using Infrastructure.Services;
 using API.Authentication;
-using Domain.UseCase.PersonServices;
+using Domain.UseCase;
 using Infrastructure.Services.Exceptions;
 
 namespace api.Controllers

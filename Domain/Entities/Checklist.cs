@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace Domain.Entities
 {
-    [Table("checklist")]
+    [Table("checklists")]
     public class Checklist
     {
         [Key]

@@ -7,10 +7,11 @@ using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Infrastructure.Services.Person;
 using Infrastructure.Services;
-using Domain.UseCase.PersonServices;
+using Domain.UseCase;
 using Domain.ViewModel;
 using Domain.UseCase.Builders;
 using Infrastructure.Services.Exceptions;
+using Domain.Entities.Enums;
 
 namespace api.Controllers
 {

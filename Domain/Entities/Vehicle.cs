@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
+using Domain.Entities.Enums;
 
 namespace Domain.Entities
 {
@@ -16,6 +17,24 @@ namespace Domain.Entities
         [Required]
         [MaxLength(150)]
         public string Name { get; set; }
+
+        [Column]
+        [Required]
+        public int BrandId { get; set; }
+
+        [JsonIgnore]
+        public Brand Brand { get; set; }
+
+        [Column]
+        [Required]
+        public int ModelId { get; set; }
+
+        [JsonIgnore]
+        public Model Model { get; set; }
+
+        [Column]
+        [Required]
+        public int Year { get; set; }
 
         [Column]
         [Required]
@@ -38,8 +57,9 @@ namespace Domain.Entities
 
         [Column]
         [Required]
-        public int IdCategory { get; set; }
+        public int CategoryId { get; set; }
 
+		[JsonIgnore]
         public Category Category { get; set; }
 
     }

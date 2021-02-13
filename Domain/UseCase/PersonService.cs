@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Domain.Authentication;
 using Domain.Entities;
+using Domain.Entities.Enums;
+using Domain.Entities.Interfaces;
 using Domain.UseCase.Builders;
 using Domain.ViewModel;
 using Domain.ViewModel.Jwt;
@@ -10,7 +12,7 @@ using Infrastructure.Services;
 using Infrastructure.Services.Exceptions;
 using Infrastructure.Services.Person;
 
-namespace Domain.UseCase.PersonServices
+namespace Domain.UseCase
 {
     public class PersonService
     {
